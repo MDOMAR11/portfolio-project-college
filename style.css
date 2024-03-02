@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 
+
+}
+.navbar a b{
+    color:#ffbd39
+}
+.header-section{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.navbar ul li a{
+  text-transform: uppercase;
+}
+
+
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #ffbd39;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.navbar ul li:hover a::after{
+    width: 100%;
+    transition: 0.5s;
+
+
+}
+
+/* start couner */
+
+
+.wrapper{
+    display: flex;
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #7FC7D9;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #212529!important;
+    border-left: 2px solid #7FC7D9;
+    animation: typing 3s steps(10) infinite;
+    margin-top: 5px;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+  /* START second section */
+  .img{
+    margin: -100px;
+    margin-left: 80px;
+  }
+  .second-section{
+    height: 600px;
+  }
+  .second-section h1{
+    margin-top: 100px;
+    color:#ffbd39;
+  }
+  .second-section .btn-1{
+    padding: 10px 30px;
+    background-color: #ffbd39;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .second-section .btn-2{
+    padding: 10px 30px;
+    background-color: #ffbd39;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 19px;
+    background-color: green;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  }
+  .second-section.btn-1:hover{
+    background-color: white;
+  }
+  .img{
+    margin-bottom: 200px !important;
+  }
+  .recent{
+    color: white;
+    
+  }
+  .project-section{
+    height: 400px;
+  }
+  .btn-primary{
+    width: 100%;
+    margin-top: 5px;
+  }
+  footer{
+    background-color: black;
+    color: white;
+  }
+  .skill-section{
+    height: 400px;
+  }
